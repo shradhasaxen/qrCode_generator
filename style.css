@@ -1,0 +1,128 @@
+:root {
+
+    --font-family-typewriter: 'Roboto Mono', monospace; 
+}
+*{
+    font-family: var(--font-family-typewriter);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-family-typewriter);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("image.jpg");
+
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.box{
+    font-family: var(--font-family-typewriter);
+    background-color:#000043a6;
+    padding: 30px;
+    width: 400px;
+    border-radius: 8px;
+}
+
+.qr-header h1{
+    font-family: var(--font-family-typewriter);
+    font-size: 26px;
+    text-align: center;
+    color: aqua;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+.qr-header input{
+    font-family: var(--font-family-typewriter);
+    width: 100%;
+    margin-block: 12px;
+}
+
+.qr-header input, select{
+    font-family: var(--font-family-typewriter);
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 18px;
+    outline: none;
+    border: 2px solid var(--border-color);
+}
+
+.qr-header label{
+    font-family: var(--font-family-typewriter);
+    color: aqua;
+    font-size: 20px;
+}
+
+.qr-header div{
+    font-family: var(--font-family-typewriter);
+    display: flex;
+    justify-content: space-between;
+}
+
+.qr-footer{
+    font-family: var(--font-family-typewriter);
+    display: flex;
+    justify-content: center;
+}
+.qr-footer a{
+    font-family: var(--font-family-typewriter);
+    background-color: #012169;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 14px 36px;
+    margin-inline: 2px;
+    color: aqua;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.qr-body{
+    font-family: var(--font-family-typewriter);
+    display: grid;
+    place-items: center;
+    padding:20px;
+}
+
+.qr-body img{
+    font-family: var(--font-family-typewriter);
+    max-width: 100%;
+    max-height: 100%;
+    margin-block: 10px;
+    padding: 20px;
+    border: 0.5px solid var(--border-color);
+    border-radius: 8px;
+}
+.bottom {
+    text-align: center;
+}
+a {
+    font-size: 10px;
+    color: white; 
+    text-decoration: none; 
+  }
+
+  
+  a:visited {
+    color: white ;
+  }
+
+@media screen and (max-width:520px){
+    .box{
+        width: 80%;
+    }
+    .qr-footer a{
+        padding: 12px;
+        font-size: 16px;
+    }
+}
